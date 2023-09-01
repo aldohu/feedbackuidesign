@@ -1,0 +1,63 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+.container {
+	width: 350px;
+	height: 200px;
+	border: 1px solid #000;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.vote-container,
+.message {
+	display: none;
+}
+.vote-container.active,
+.message.active {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.fa-heart {
+	color: red;
+	fill: red;
+}
+.fa-heart::after {
+	color: red;
+	fill: red;
+	width: 100%;
+	height: 100%;
+	background-color: red;
+}
+.fa-grin,
+.fa-meh,
+.fa-smile {
+	width: 1rem;
+	margin: 0.5rem;
+	font-size: 1.5rem;
+	color: yellow;
+}
+.send {
+	background-color: #000;
+	margin: 20px;
+	color: aliceblue;
+	padding: 10px 20px;
+	border-radius: 5px;
+	outline: none;
+	border: none;
+	font-weight: bold;
+	font-size: 1rem;
+}
